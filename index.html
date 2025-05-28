@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brawl Stars Push-Service</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Brawl Stars Push-Service</h1>
+    <p>Profi-Gamer bringen dich ganz nach oben – einfach, schnell & sicher!</p>
+    <a href="#order" class="btn">Jetzt Push buchen</a>
+  </header>
+
+  <section id="services">
+    <h2>Unsere Angebote</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>+500 Trophäen</h3>
+        <p>Nur 5 €</p>
+      </div>
+      <div class="card">
+        <h3>+1000 Trophäen</h3>
+        <p>Nur 9 €</p>
+      </div>
+      <div class="card">
+        <h3>Rang 35 Brawler</h3>
+        <p>Nur 15 €</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="order">
+    <h2>Buchung starten</h2>
+    <form id="fake-order">
+      <label for="name">Dein Name</label>
+      <input type="text" id="name" required>
+
+      <label for="service">Gewünschter Push</label>
+      <select id="service">
+        <option>+500 Trophäen – 5 €</option>
+        <option>+1000 Trophäen – 9 €</option>
+        <option>Rang 35 Brawler – 15 €</option>
+      </select>
+
+      <label for="contact">Dein Discord-Name</label>
+      <input type="text" id="contact" required>
+
+      <button type="submit" class="btn">Jetzt bestellen</button>
+    </form>
+    <p class="fake-info">Hinweis: Dies ist ein Demo-System – es wird keine echte Bestellung ausgelöst.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Brawl Stars Push-Service | Nicht offiziell mit Supercell verbunden</p>
+  </footer>
+
+  <script>
+    document.getElementById("fake-order").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Danke für deine (nicht echte) Bestellung! Wir melden uns via Discord.");
+    });
+  </script>
+</body>
+</html>
