@@ -28,6 +28,7 @@ header p {
   font-size: 1.3rem;
   margin-bottom: 1.5rem;
   animation: fadeIn 2s ease-in;
+  text-shadow: none;
 }
 
 .btn {
